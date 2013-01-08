@@ -1,0 +1,106 @@
+html, body{ 
+    padding:0; 
+    margin:0 auto; 
+    height:100%;
+    width: 860px;
+    position:relative;
+    font-family: cursive;
+    font-size: 0.9em;
+}
+#header {
+    height: 50px;
+    position: relative;
+    border: 2px solid #717dc9;
+/*    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;*/
+    border-radius: 8px;
+
+    /*background-color: darkseagreen;*/
+}
+
+#menu {
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+#menu li {
+    float: left;
+    margin: 0;				
+}
+#menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    line-height: 20px;
+}
+#menu li a:hover, #menu li.active a {
+    border-top: 1px solid #717dc9;
+    border-bottom: 1px solid #717dc9;
+    border-radius: 8px;
+}
+#container{ 
+    /*background:#ffcccc;*/ 
+    min-height:100%; 
+    _height:100%; 
+}
+#sidebar {
+    width: 20%;
+    /*border-right:2px dashed #717dc9;*/
+    float: left;
+    /*background-color: coral;*/
+    position: absolute;
+    min-height: 600px;
+}
+#main{ 
+    /*width: 690px;*/
+    /*border-left: 2px dashed #717dc9;*/
+    margin-left: 20%;
+    padding-left: 10px;
+    /*background-color: bisque;*/
+    padding-bottom:50px;
+    text-align: justify;
+} 
+#footer{ 
+    /*background:#36F;*/ 
+    border-top: 2px solid #717dc9;
+    height:50px; 
+    margin-top:-50px; 
+    position:relative; 
+}
+h1, h2{
+    margin-top: 0px;
+}
+#auth {
+    border-bottom: 2px solid #717dc9;
+
+    /*    border-left: 2px solid #717dc9;
+        border-right: 2px solid #717dc9;*/
+
+}
+div h1 a {
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black, 0 0 1em #717dc9; /* Параметры тени */
+    color: white; /* Белый цвет текста */
+    font-size: 1em; /* Размер надписи */
+    margin: 8px;
+
+}
+#auth {
+    padding: 10px;
+}
+.new div:last-child {
+    border: none;
+}
+.new div {
+    border-bottom: 2px dashed #717dc9;
+}
+.news_info {
+    font-size: 0.8em;
+    color: darkgray;
+}

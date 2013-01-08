@@ -1,0 +1,1 @@
+<?php $HOST = "localhost"; $USER = "alenka"; $PASS = "lacalutr"; $db_name = "alenka"; $db_user_table = "users"; $u_role = "10"; $reg_text = ""; if (!mysql_connect("$HOST", "$USER", "$PASS"))echo "Не удается подключить базу данных MySQL<br />"; mysql_query("set names 'utf-8'"); mysql_select_db($db_name);?>
