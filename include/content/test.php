@@ -26,10 +26,10 @@ if (isset($_POST['num'])) {
     $count_num->getSum('getNum');
     $array_time = $count_num->res_values['time'];
     $count_num->outMess;
-// пересчет функцией getArrayNum($num);
-    $count_num->getSum('getArray');
-    $array_time = $count_num->res_values['time'];
-    $count_num->outMess;
+//// пересчет функцией getArrayNum($num);
+//    $count_num->getSum('getArray');
+//    $array_time = $count_num->res_values['time'];
+//    $count_num->outMess;
 // сравнение результатов работы двух функций
     if ($num_time > $array_time) {
         $time = $num_time - $array_time;

@@ -4,6 +4,7 @@ class countNum {
 
     public $_time_limit;
     public $res_values = array();
+    private $easy_num;
 
     function __construct($time_limit) {
         $this->_time_limit = $time_limit;
@@ -13,7 +14,8 @@ class countNum {
      * Функция проверяет простое ли число и записывает массив простых чисел
      */
 
-    function getArray($num) {
+    private function getArray($num) {
+        $easy_num = array();
         if ($num == 1 || $num == 2 || $num == 3) {
             $easy_num[] = $num;
             return TRUE;
@@ -38,7 +40,7 @@ class countNum {
      * Функция проверяет простое ли число
      */
 
-    function getNum($num) {
+    private function getNum($num) {
         if ($num == 1 || $num == 2 || $num == 3) {
             return TRUE;
         }
@@ -63,7 +65,7 @@ class countNum {
      * 
      */
 
-    function getSum($func_name) {
+    public function getSum($func_name) {
         $res_values['sum'] = 0;
         $res_values['func_name'] = $func_name;
         $num = 1;
@@ -91,7 +93,7 @@ class countNum {
      * 
      */
 
-    function outMess() {
+    public function outMess() {
         echo '<br /><b>Пересчет функцией ' . $result['func_name'] . ' </b><br />';
         if (isset($result['err_mess'])) {
             echo $result['err_mess'];
