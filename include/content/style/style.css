@@ -1,0 +1,23 @@
+/* 
+    Document   : style
+    Created on : 03.02.2013, 17:34:02
+    Author     : Влад
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#cloud {
+    margin-top: 100px; 
+    text-align: center;
+    
+}
+
+#cloudImg {
+    cursor: pointer;
+    clear: both;
+
+}
